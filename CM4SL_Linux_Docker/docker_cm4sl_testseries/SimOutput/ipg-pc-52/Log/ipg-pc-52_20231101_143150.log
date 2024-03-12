@@ -1,0 +1,688 @@
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ISO	2023-11-01 14:31:56
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ISO
+
+TIME	27.747
+		Engine speed at entrance 2151 rpm
+TIME	33.299
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ISO	33.299s	630.056m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ISO	2023-11-01 14:32:00
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ISO
+
+TIME	26.804
+		Engine speed at entrance 2403 rpm
+TIME	31.792
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ISO	31.792s	630.059m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ISO	2023-11-01 14:32:04
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ISO
+
+TIME	26.364
+		Engine speed at entrance 2592 rpm
+TIME	31.024
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ISO	31.024s	630.078m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:32:08
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	40.962
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_VDA	40.962s	364.153m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:32:12
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	38.408
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_VDA	38.408s	371.953m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:32:16
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	36.793
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_VDA	36.793s	376.516m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:32:19
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	35.657
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_VDA	35.657s	379.254m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:32:23
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	23.875
+ERROR		Vehicle leaves road at about x=358.815, y=-10.5061 TireNo=1
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_ABORT	Examples/VehicleDynamics/Handling/LaneChange_VDA	23.878s	318.63m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_AMS	2023-11-01 14:32:27
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_AMS
+
+TIME	38.078
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_AMS	38.078s	696.288m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_AMS	2023-11-01 14:32:31
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_AMS
+
+TIME	35.644
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_AMS	35.644s	696.295m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_AMS	2023-11-01 14:32:34
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_AMS
+
+TIME	33.977
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_AMS	33.977s	696.277m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_AMS	2023-11-01 14:32:38
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_AMS
+
+TIME	32.961
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_AMS	32.961s	696.268m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ADAC	2023-11-01 14:32:42
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ADAC
+
+TIME	46.139
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ADAC	46.139s	626.887m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ADAC	2023-11-01 14:32:46
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ADAC
+
+TIME	41.729
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ADAC	41.729s	626.836m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ADAC	2023-11-01 14:32:50
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ADAC
+
+TIME	38.845
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ADAC	38.845s	626.797m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ISO	2023-11-01 14:32:54
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ISO
+
+TIME	27.747
+		Engine speed at entrance 2151 rpm
+TIME	33.299
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ISO	33.299s	630.056m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ISO	2023-11-01 14:32:58
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ISO
+
+TIME	26.804
+		Engine speed at entrance 2403 rpm
+TIME	31.792
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ISO	31.792s	630.059m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ISO	2023-11-01 14:33:02
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ISO
+
+TIME	26.364
+		Engine speed at entrance 2592 rpm
+TIME	31.024
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ISO	31.024s	630.078m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:33:06
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	40.962
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_VDA	40.962s	364.153m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:33:09
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	38.408
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_VDA	38.408s	371.953m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:33:13
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	36.793
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_VDA	36.793s	376.516m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:33:17
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	35.657
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_VDA	35.657s	379.254m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:33:21
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	23.875
+ERROR		Vehicle leaves road at about x=358.815, y=-10.5061 TireNo=1
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_ABORT	Examples/VehicleDynamics/Handling/LaneChange_VDA	23.878s	318.63m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_AMS	2023-11-01 14:33:25
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_AMS
+
+TIME	38.078
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_AMS	38.078s	696.288m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_AMS	2023-11-01 14:33:28
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_AMS
+
+TIME	35.644
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_AMS	35.644s	696.295m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_AMS	2023-11-01 14:33:32
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_AMS
+
+TIME	33.977
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_AMS	33.977s	696.277m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_AMS	2023-11-01 14:33:36
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_AMS
+
+TIME	32.961
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_AMS	32.961s	696.268m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ADAC	2023-11-01 14:33:40
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ADAC
+
+TIME	46.139
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ADAC	46.139s	626.887m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ADAC	2023-11-01 14:33:44
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ADAC
+
+TIME	41.729
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ADAC	41.729s	626.836m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ADAC	2023-11-01 14:33:47
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ADAC
+
+TIME	38.845
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ADAC	38.845s	626.797m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ISO	2023-11-01 14:33:52
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ISO
+
+TIME	27.747
+		Engine speed at entrance 2151 rpm
+TIME	33.299
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ISO	33.299s	630.056m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ISO	2023-11-01 14:33:55
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ISO
+
+TIME	26.804
+		Engine speed at entrance 2403 rpm
+TIME	31.792
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ISO	31.792s	630.059m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ISO	2023-11-01 14:33:59
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ISO
+
+TIME	26.364
+		Engine speed at entrance 2592 rpm
+TIME	31.024
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ISO	31.024s	630.078m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:34:03
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	40.962
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_VDA	40.962s	364.153m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:34:07
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	38.408
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_VDA	38.408s	371.953m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:34:11
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	36.793
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_VDA	36.793s	376.516m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:34:15
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	35.657
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_VDA	35.657s	379.254m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:34:18
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	23.875
+ERROR		Vehicle leaves road at about x=358.815, y=-10.5061 TireNo=1
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_ABORT	Examples/VehicleDynamics/Handling/LaneChange_VDA	23.878s	318.63m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_AMS	2023-11-01 14:34:22
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_AMS
+
+TIME	38.078
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_AMS	38.078s	696.288m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_AMS	2023-11-01 14:34:26
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_AMS
+
+TIME	35.644
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_AMS	35.644s	696.295m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_AMS	2023-11-01 14:34:30
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_AMS
+
+TIME	33.977
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_AMS	33.977s	696.277m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_AMS	2023-11-01 14:34:33
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_AMS
+
+TIME	32.961
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_AMS	32.961s	696.268m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ADAC	2023-11-01 14:34:37
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ADAC
+
+TIME	46.139
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ADAC	46.139s	626.887m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ADAC	2023-11-01 14:34:41
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ADAC
+
+TIME	41.729
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ADAC	41.729s	626.836m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ADAC	2023-11-01 14:34:45
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ADAC
+
+TIME	38.845
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ADAC	38.845s	626.797m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ISO	2023-11-01 14:34:49
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ISO
+
+TIME	27.747
+		Engine speed at entrance 2151 rpm
+TIME	33.299
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ISO	33.299s	630.056m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ISO	2023-11-01 14:34:53
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ISO
+
+TIME	26.804
+		Engine speed at entrance 2403 rpm
+TIME	31.792
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ISO	31.792s	630.059m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ISO	2023-11-01 14:34:57
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ISO
+
+TIME	26.364
+		Engine speed at entrance 2592 rpm
+TIME	31.024
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ISO	31.024s	630.078m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:35:01
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	40.962
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_VDA	40.962s	364.153m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:35:04
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	38.408
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_VDA	38.408s	371.953m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:35:08
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	36.793
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_VDA	36.793s	376.516m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:35:12
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	35.657
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_VDA	35.657s	379.254m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_VDA	2023-11-01 14:35:16
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_VDA
+
+TIME	23.875
+ERROR		Vehicle leaves road at about x=358.815, y=-10.5061 TireNo=1
+WARNING		One or more named values were never referenced
+		Unreferenced named value 'PylonShiftBkCoef'
+		Unreferenced named value 'PylonShiftFdCoef'
+SIM_ABORT	Examples/VehicleDynamics/Handling/LaneChange_VDA	23.878s	318.63m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_AMS	2023-11-01 14:35:20
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_AMS
+
+TIME	38.078
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_AMS	38.078s	696.288m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_AMS	2023-11-01 14:35:23
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_AMS
+
+TIME	35.644
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_AMS	35.644s	696.295m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_AMS	2023-11-01 14:35:27
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_AMS
+
+TIME	33.977
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_AMS	33.977s	696.277m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_AMS	2023-11-01 14:35:31
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_AMS
+
+TIME	32.961
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_AMS	32.961s	696.268m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ADAC	2023-11-01 14:35:35
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ADAC
+
+TIME	46.139
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ADAC	46.139s	626.887m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ADAC	2023-11-01 14:35:39
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ADAC
+
+TIME	41.729
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ADAC	41.729s	626.836m
+APPLICATION	CarMaker 12.0.1 - Car_Generic #5 (linux64-12.0.1)
+COMPILED	jetbrains@66e0c34c4bd1 2023-05-24 12:27:19
+ 
+		I/O Configuration: default
+SIM_START	Examples/VehicleDynamics/Handling/LaneChange_ADAC	2023-11-01 14:35:42
+TIME	0.000
+SIMULATE	Examples/VehicleDynamics/Handling/LaneChange_ADAC
+
+TIME	38.845
+SIM_END		Examples/VehicleDynamics/Handling/LaneChange_ADAC	38.845s	626.797m

@@ -1,0 +1,31 @@
+# docker build
+sudo docker build -t hmc_hybrid_lkas .
+sudo docker build -f ./Dockerfile_SCC -t hmc_hybrid_scc_fca_full .
+
+sudo docker run --gpus all \
+-v ./scc_fca_cm12:/CM_Projects/scc_fca_cm12 \
+-v /opt/ipg/carmaker/linux64-12.0.1:/opt/ipg/carmaker/linux64-12.0.1 \
+hybrid_cloud_scc_fca Tuebingen_FCA_1 1
+
+
+# GUI 모드 - pre setup
+xhost +local:docker
+
+# GUI 모드 실행
+sudo docker run -it --rm --gpus all \
+-v ./lkas_cm12:/CM_Projects/lkas_cm12 \
+-v /opt/ipg/carmaker/linux64-12.0.1:/opt/ipg/carmaker/linux64-12.0.1 \
+-e DISPLAY=$DISPLAY \
+-e XAUTHORITY=/tmp/.XAuthority \
+-v $XAUTHORITY:/tmp/.XAuthority \
+-v /tmp/.X11-unix/:/tmp/.X11-unix \
+hybrid_cloud_lkas
+
+
+sudo docker run --gpus all \
+-v ./scc_fca_cm12:/CM_Projects/scc_fca_cm12 \
+hmc_hybrid_scc_fca_full Tuebingen_FCA_1 1
+
+sudo docker run -it --gpus all \
+-v ./scc_fca_cm12:/CM_Projects/scc_fca_cm12 \
+hmc_hybrid_scc_fca_full

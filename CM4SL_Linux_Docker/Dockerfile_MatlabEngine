@@ -1,0 +1,43 @@
+FROM nvidia/cudagl:11.3.0-base-ubuntu20.04
+
+ENV TZ Europe/Berlin
+
+COPY license.lic /.matlab/R2022b_licenses/license.lic
+ENV MLM_LICENSE_FILE=/.matlab/R2022b_licenses/license.lic
+RUN apt update \
+        && DEBIAN_FRONTEND=noninteractive apt install -y \
+            libusb-1.0-0 \
+            tzdata \
+            xvfb \
+            libglu1-mesa \
+            libxrandr-dev \
+            libxft2 \
+            libxss1 \
+            libpango-1.0-0 \
+            libnss3 \
+            libatk1.0-0 \
+            libatk-bridge2.0-0 \
+            libcups2 \
+            libxcomposite1 \
+            libxdamage1 \
+            libasound2 \
+            libgdk-pixbuf2.0-0 \
+            libxinerama1 \
+            libxcursor1 \
+            libpangocairo-1.0-0 \
+            libpangoft2-1.0-0 \
+            libpython3.8-dev \
+            python3 \
+    && rm -rf /var/lib/apt/lists/* \
+    && mkdir -p /opt/ipg/etc \
+    && echo "server 192.168.0.102" >> /opt/ipg/etc/Licenses \
+    && cp /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+    
+COPY ./matlab /usr/local/lib/python3.8/dist-packages/matlab
+COPY ./matlabengine-9.13.9.dist-info /usr/local/lib/python3.8/dist-packages/matlabengine-9.13.9.dist-info
+COPY ./docker_cm4sl_testseries /CM_Projects/docker_cm4sl_testseries
+
+WORKDIR /CM_Projects/docker_cm4sl_testseries
+
+#RUN echo "Xvfb :5 -screen 0 1024x768x24 &" >> ~/.bashrc \
+#	&& echo "export DISPLAY=:5" >> ~/.bashrc

@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfs-windows-matlab-2022b
+  labels:
+    matlab-version: "2022b"
+    os: "windows"
+spec:
+  capacity:
+    storage: 9Gi
+  accessModes:
+    - ReadWriteMany
+  storageClassName: nfs
+  nfs:
+    server: 192.168.0.162
+    path: "/usr/local/MATLAB/windows/R2022b"
+    
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfs-windows-matlab-2020b
+  labels:
+    matlab-version: 2020b
+    os: "windows"
+spec:
+  capacity:
+    storage: 9Gi
+  accessModes:
+    - ReadWriteMany
+  storageClassName: nfs
+  nfs:
+    server: 192.168.0.162
+    path: "/usr/local/MATLAB/windows/R2020b"

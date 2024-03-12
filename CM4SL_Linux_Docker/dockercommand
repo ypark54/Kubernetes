@@ -1,0 +1,82 @@
+0242AC110002
+
+docker build -f ./Dockerfile_MatlabEngine -t cm4sl_rsi .
+
+sudo docker run --rm -it \
+-v /home/ipg-pc-52/CM-Projects/work_yep:/CM-Projects \
+-v /opt/ipg/carmaker/linux64-12.0.1:/opt/ipg/carmaker/linux64-12.0.1 \
+-v /usr/local/MATLAB/R2022b:/usr/local/MATLAB/R2022b \
+--gpus all \
+-e DISPLAY=$DISPLAY \
+-e XAUTHORITY=/tmp/.XAuthority \
+-v $XAUTHORITY:/tmp/.XAuthority \
+-v /tmp/.X11-unix:/tmp/.X11-unix \
+cm4sl
+
+sudo mount -t nfs 192.168.0.169:/opt/ipg/carmaker/linux64-12.0.1 /mnt/nfs/carmaker/linux64-12.0.1/
+sudo mount -t nfs 192.168.0.169:/usr/local/MATLAB/R2022b /mnt/nfs/MATLAB/R2022b/
+
+sudo docker run --rm -it \
+-v /home/ipg-pc-52/CM-Projects/work_yep:/CM-Projects \
+-v /mnt/nfs/carmaker/linux64-12.0.1:/opt/ipg/carmaker/linux64-12.0.1 \
+-v /mnt/nfs/MATLAB/R2022b:/usr/local/MATLAB/R2022b \
+--gpus all \
+-e DISPLAY=$DISPLAY \
+-e XAUTHORITY=/tmp/.XAuthority \
+-v $XAUTHORITY:/tmp/.XAuthority \
+-v /tmp/.X11-unix:/tmp/.X11-unix \
+cm4sl
+
+
+./matlab -nosplash -nouserjavapath -nosoftwareopengl -nodisplay -batch "run('/CM-Projects/default/cm_1201/run_testrun.m')"
+
+cd /CM-Projects/docker_cm4sl_testseries/
+
+cd CM-Projects/default/cm_1201/
+ /usr/local/MATLAB/R2022b/bin/matlab -nosplash -nouserjavapath -nosoftwareopengl -nodisplay -batch "disp('hello world')"
+ 
+ sudo docker run --rm -it \
+-v /home/ipg-pc-52/CM-Projects/work_yep:/CM-Projects \
+-v /opt/ipg/carmaker/linux64-12.0.1:/opt/ipg/carmaker/linux64-12.0.1 \
+-v /usr/local/MATLAB/R2022b:/usr/local/MATLAB/R2022b \
+--gpus all \
+-e DISPLAY=$DISPLAY \
+-e XAUTHORITY=/tmp/.XAuthority \
+-v $XAUTHORITY:/tmp/.XAuthority \
+-v /tmp/.X11-unix:/tmp/.X11-unix \
+cm4sl_test
+
+sudo docker run --rm -it \
+-v /home/ipg-pc-52/CM-Projects/work_yep/:/CM-Projects/ \
+-v /opt/ipg/carmaker/linux64-12.0.1:/opt/ipg/carmaker/linux64-12.0.1 \
+-v /usr/local/MATLAB/R2022b:/usr/local/MATLAB/R2022b \
+cm4sl
+
+sudo docker run --rm -it \
+-v /opt/ipg/carmaker/linux64-12.0.1:/opt/ipg/carmaker/linux64-12.0.1 \
+-v /usr/local/MATLAB/R2022b:/usr/local/MATLAB/R2022b \
+--gpus all \
+-e DISPLAY=$DISPLAY \
+-e XAUTHORITY=/tmp/.XAuthority \
+-v $XAUTHORITY:/tmp/.XAuthority \
+-v /tmp/.X11-unix:/tmp/.X11-unix \
+cm4sl_rsi
+
+sudo docker run --rm -it \
+-v /mnt/nfs/carmaker/linux64-12.0.1:/opt/ipg/carmaker/linux64-12.0.1 \
+-v /mnt/nfs/MATLAB/R2022b:/usr/local/MATLAB/R2022b \
+cm4sl
+
+sudo docker run --rm -it \
+-v /mnt/nfs/carmaker/linux64-12.0.1:/opt/ipg/carmaker/linux64-12.0.1 \
+-v /mnt/nfs/MATLAB/R2022b:/usr/local/MATLAB/R2022b \
+--gpus all \
+-e DISPLAY=$DISPLAY \
+-e XAUTHORITY=/tmp/.XAuthority \
+-v $XAUTHORITY:/tmp/.XAuthority \
+-v /tmp/.X11-unix:/tmp/.X11-unix \
+cm4sl_rsi
+
+Xvfb :5 -screen 0 1024x768x24 &
+export DISPLAY=:5
+export DISPLAY=:1
