@@ -29,7 +29,12 @@ spec:
         volumeMounts:
             - name: smb
               mountPath: "/ipg/carmaker"
+            - name: smb2
+              mountPath: "/MATLAB"
       volumes:
         - name: smb
           persistentVolumeClaim:
             claimName: pvc-smb
+        - name: smb2
+          persistentVolumeClaim:
+            claimName: pvc-smb2
