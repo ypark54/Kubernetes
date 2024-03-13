@@ -50,3 +50,54 @@ spec:
   nfs:
     server: 192.168.0.162
     path: "/opt/ipg/carmaker/linux64-11.1.2"
+    
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nfs-linux-cm-13
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: nfs
+  resources:
+    requests:
+      storage: 1Mi
+  selector:
+    matchLabels:
+      carmaker-version: "13"
+      os: "linux"
+      
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nfs-linux-cm-12
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: nfs
+  resources:
+    requests:
+      storage: 1Mi
+  selector:
+    matchLabels:
+      carmaker-version: "12"
+      os: "linux"
+      
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nfs-linux-cm-11
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: nfs
+  resources:
+    requests:
+      storage: 1Mi
+  selector:
+    matchLabels:
+      carmaker-version: "11"
+      os: "linux"

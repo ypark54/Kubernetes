@@ -1,0 +1,2 @@
+kubectl create secret generic smbcreds --from-literal username=yep --from-literal password="CarMaker"
+helm install csi-driver-smb csi-driver-smb/csi-driver-smb --namespace kube-system --version v1.14.0 --set controller.runOnControlPlane=true --set windows.enabled=true --set windows.csiproxy.enabled=true

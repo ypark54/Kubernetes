@@ -32,3 +32,35 @@ spec:
   nfs:
     server: 192.168.0.162
     path: "/usr/local/MATLAB/R2020b"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nfs-linux-matlab-2022b
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: nfs
+  resources:
+    requests:
+      storage: 1Mi
+  selector:
+    matchLabels:
+      matlab-version: "2022b"
+      os: "linux"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nfs-linux-matlab-2020b
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: nfs
+  resources:
+    requests:
+      storage: 1Mi
+  selector:
+    matchLabels:
+      matlab-version: "2020b"
+      os: "linux"

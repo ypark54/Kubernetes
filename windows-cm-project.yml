@@ -25,16 +25,11 @@ spec:
     spec:
       containers:
       - name: cm-project-windows
-        image: mcr.microsoft.com/windows:ltsc2019 #yeonsoopark/cm-windows:v1.0-ltsc2019
-#        volumeMounts:
-#          - name: nfs-windows-cm-12
-#            mountPath: "C:/ipg/carmaker/linux64-12.0.1"
-#          - name: nfs-windows-matlab-2022b
-#            mountPath: "C:/Program Files/MATLAB/R2022b"
-#      volumes:
-#      - name: nfs-windows-cm-12
-#        persistentVolumeClaim:
-#          claimName: nfs-windows-cm-12
-#      - name: nfs-windows-matlab-2022b
-#        persistentVolumeClaim:
-#          claimName: nfs-windows-matlab-2022b
+        image: yeonsoopark/cm-windows:v1.0-ltsc2019
+        volumeMounts:
+            - name: smb
+              mountPath: "/ipg/carmaker"
+      volumes:
+        - name: smb
+          persistentVolumeClaim:
+            claimName: pvc-smb
