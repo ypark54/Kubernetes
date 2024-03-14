@@ -1,6 +1,7 @@
 ARG golangTag=1.12.6-windowsservercore-1809
 # TODO: need a -1903 tag but none published yet
-ARG nanoserverTag="mcr.microsoft.com/windows/nanoserver:1809-amd64"
+ARG imageName=mcr.microsoft.com/windows
+ARG imageTag=ltsc2019
 # Other common ones: 1803-amd64, 1903-amd64
 # full list: curl -L https://mcr.microsoft.com/v2/windows/nanoserver/tags/list
 
@@ -14,7 +15,8 @@ RUN cd $ENV:wincatsrcdir ; git fetch --all ; git checkout v0.1.6 			 ; git statu
 
 
 # Basic configuration
-FROM mcr.microsoft.com/windows:ltsc2019
+
+FROM ${imageName}:${imageTag}
 
 COPY --from=builder "c:\\gopath\\src\\github.com\\kubernetes-sigs\\sig-windows-tools\\cmd\\wincat\\wincat.exe" "c:\\windows\\system32\\wincat.exe"
 COPY --from=builder "c:\\gopath\\src\\github.com\\kubernetes-sigs\\windows-testing\\images\\pause\\pauseloop.exe" "c:\\windows\\system32\\pauseloop.exe"
@@ -22,9 +24,8 @@ COPY --from=builder "c:\\gopath\\src\\github.com\\kubernetes-sigs\\windows-testi
 
 # CarMaker configuration
 ARG CM_LICENSE="server 192.168.0.102"
-RUN mkdir -p "C:/ipg/etc"
-RUN mkdir "C:/ipg/carmaker"
-RUN echo $CM_LICENSE >> C:/ipg/etc/Licenses
+RUN mkdir "C:/ipg/etc" "C:/ipg/carmaker"
+RUN echo %CM_LICENSE% >> C:/ipg/etc/Licenses
 
 COPY default default
 
