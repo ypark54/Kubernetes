@@ -1,8 +1,8 @@
 # Directories
-.road_cache/
-SimOutput/
-venv*/
-slprj/
+**/.road_cache/
+**/SimOutput/
+**/venv*/
+**/slprj/
 
 
 # File Formats
