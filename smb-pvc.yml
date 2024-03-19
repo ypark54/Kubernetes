@@ -1,35 +1,23 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: pvc-smb
+  name: pvc-cm-smb
 spec:
   accessModes:
     - ReadWriteMany
   resources:
     requests:
       storage: 1Gi
-  storageClassName: smb
+  storageClassName: cm-windows-smb
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: pvc-smb2
+  name: pvc-matlab-smb
 spec:
   accessModes:
     - ReadWriteMany
   resources:
     requests:
       storage: 1Gi
-  storageClassName: smb2
----
-kind: PersistentVolumeClaim
-apiVersion: v1
-metadata:
-  name: pvc-smb3
-spec:
-  accessModes:
-    - ReadWriteMany
-  resources:
-    requests:
-      storage: 1Gi
-  storageClassName: smb3
+  storageClassName: matlab-windows-smb

@@ -27,19 +27,14 @@ spec:
         - name: cm-project-windows
           image: yeonsoopark/cm-windows:v1.0-ltsc2019
           volumeMounts:
-            - name: smb
+            - name: cm-smb
               mountPath: "/ipg/carmaker/"
-            - name: smb2
+            - name: matlab-smb
               mountPath: "/mnt/smb2"
-            - name: smb3
-              mountPath: "/mnt/smb3"
       volumes:
-        - name: smb
+        - name: cm-smb
           persistentVolumeClaim:
-            claimName: pvc-smb
-        - name: smb2
+            claimName: pvc-cm-smb
+        - name: matlab-smb
           persistentVolumeClaim:
-            claimName: pvc-smb2
-        - name: smb3
-          persistentVolumeClaim:
-            claimName: pvc-smb3
+            claimName: pvc-matlab-smb

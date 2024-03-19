@@ -1,0 +1,4 @@
+FROM andyzhangx/samba:win-fix
+
+
+COPY ./IPG/carmaker /smbshare/carmaker

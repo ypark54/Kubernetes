@@ -1,0 +1,50 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: cm-windows-smb
+  labels:
+    app: cm-windows-smb
+spec:
+  type: LoadBalancer
+  selector:
+    app: cm-windows-smb
+  ports:
+    - port: 445
+      name: cm-windows-smb
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: cm-windows-smb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cm-windows-smb
+  template:
+    metadata:
+      name: cm-windows-smb
+      labels:
+        app: cm-windows-smb
+    spec:
+      nodeSelector:
+        "kubernetes.io/os": linux
+      containers:
+        - name: cm-windows-smb
+          image: yeonsoopark/cm-windows:12.0.2
+          env:
+            - name: PERMISSIONS
+              value: "0777"
+            - name: USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: smbcreds2
+                  key: username
+            - name: PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: smbcreds2
+                  key: password
+          args: ["-u", "$(USERNAME);$(PASSWORD)", "-s", "share;/smbshare/;yes;no;yes;all;none", "-p"]
+
