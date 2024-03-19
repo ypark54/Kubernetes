@@ -24,13 +24,15 @@ spec:
         os: "windows"
     spec:
       containers:
-      - name: cm-project-windows
-        image: yeonsoopark/cm-windows:v1.0-ltsc2019
-        volumeMounts:
+        - name: cm-project-windows
+          image: yeonsoopark/cm-windows:v1.0-ltsc2019
+          volumeMounts:
             - name: smb
-              mountPath: "/ipg/carmaker"
+              mountPath: "/ipg/carmaker/"
             - name: smb2
-              mountPath: "/MATLAB"
+              mountPath: "/mnt/smb2"
+            - name: smb3
+              mountPath: "/mnt/smb3"
       volumes:
         - name: smb
           persistentVolumeClaim:
@@ -38,3 +40,6 @@ spec:
         - name: smb2
           persistentVolumeClaim:
             claimName: pvc-smb2
+        - name: smb3
+          persistentVolumeClaim:
+            claimName: pvc-smb3
