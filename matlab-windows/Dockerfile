@@ -1,53 +1,14 @@
-####################################
-##
-## Install Matlab on Linux with Wine
-##
-####################################
-FROM ubuntu:22.04 as matlab-installer
+FROM docker:26.0.0-rc2-windowsservercore-1809
 
-# Can be downloaded from https://www.mathworks.com/downloads/
-# Set to 'I want to <Get ISOs and DMGS>' on the dropdown menu to download full ISOs
-# For this Dockerfile, a predownloaded iso is copied
-COPY ./R2022b_Update_8_Windows.iso ./R2022b_Update_8_Windows.iso
+COPY ./R2022b_Update_8_Windows.iso ./Matlab_Installation.iso
+COPY ./7z2401-x64.msi ./7z2401-x64.msi
+SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'Continue'; $verbosePreference='Continue';"]
+RUN Start-Process msiexec -Wait -ArgumentList '/i C:\7z2401-x64.msi /qn'
+RUN Start-Process 'C:\Program Files\7-Zip\7z.exe' -Wait -ArgumentList 'x Matlab_Installation.iso -oMatlab_Installation -y'
+COPY ./installer_input.txt C:/Matlab_Installation/installer_input.txt
+RUN Start-Process 'C:\Matlab_Installation\setup.exe' -Wait -ArgumentList '-inputFile C:\Matlab_Installation\installer_input.txt'; rm -R 'C:\Matlab_Installation'; rm 'C:\Matlab_Installation.iso'
 
-ENV DEBIAN_FRONTEND="noninteractive"
-RUN apt update && apt install -y --install-recommends \
-	apt-transport-https \
-	ca-certificates \
-	gnupg \
-	p7zip-full \
-	wget \
-	xvfb
-	
-ARG WINE_BRANCH="stable"
-RUN wget -nv -O- https://dl.winehq.org/wine-builds/winehq.key | APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=1 apt-key add - \
-    && echo "deb https://dl.winehq.org/wine-builds/ubuntu/ $(grep VERSION_CODENAME= /etc/os-release | cut -d= -f2) main" >> /etc/apt/sources.list \
-    && dpkg --add-architecture i386 \
-    && apt update \
-    && apt install -y --install-recommends winehq-${WINE_BRANCH} \
-    && rm -rf /var/lib/apt/lists/*
+COPY ./Dockerfile-dind ./Dockerfile
+COPY ./install.ps1 ./install.ps1
 
-RUN 7z x ./R2022b_Update_8_Windows.iso -o./Matlab_Installation
-WORKDIR ./Matlab_Installation
-COPY ./installer_input.txt ./installer_input.txt
-COPY ./install.sh ./install.sh
-RUN chmod +x ./install.sh
-RUN ./install.sh
-
-#############################################################
-##
-## Copy the Matlab installation to a minimal SMB server image
-##
-#############################################################
-FROM andyzhangx/samba:win-fix
-
-ARG src="/home/user/MATLAB/"
-ARG trg="/smbshare/MATLAB/"
-COPY --from=matlab-installer ${src} ${trg}
-
-
-# TODO: Follow up with SMB configuration fixes to provide full 
-
-
-
-
+CMD ["powershell", "./install.ps1"]

@@ -1,5 +1,5 @@
 FROM andyzhangx/samba:win-fix
 
-ARG src="./IPG/carmaker"
+ARG src="./Program Files/MATLAB/"
 ARG trg="/smbshare/"
 COPY ${src} ${trg}
