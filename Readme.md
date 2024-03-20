@@ -3,21 +3,25 @@
 - This repository contains Dockerfiles to build necessary images, and YAML files to set up Kubernetes clusters to run Carmaker for Simulink on a Windows node
 
 ## Versions ##
-- Docker v4.28.0
+- Docker Desktop v4.28.0
+- Docker v25.0.4(Linux), v25.0.3(Windows)
+- cri-dockerd v0.3.11
 - Kubernetes v1.29.2
 - Flannel v0.24.3
 - Helm v3.14.2
 - csi-driver-smb v1.14.0
+- CarMaker 12.0.2
+- Matlab R2022b
 
 ## Overview ##
 ### Cluster Setup ###
 - HA Proxy Frontend for multiple control planes (Ubuntu 22.04)
 - Control planes
   - OS: Ubuntu 22.04
-  - Container Runtime: crio-dockerd
+  - Container Runtime: cri-dockerd
 - Linux worker nodes
   - OS: Ubuntu 22.04
-  - Container Runtime: crio-dockerd
+  - Container Runtime: cri-dockerd
 - Windows worker nodes
   - OS: Windows Server 2019
   - Container Runtime: cri
@@ -43,6 +47,7 @@
 
 ## Useful Links ##
 - https://github.com/ypark54/Ansible
+- https://github.com/Mirantis/cri-dockerd
 - https://medium.com/@murat.bilal/setting-up-kubernetes-cluster-with-multiple-control-plane-nodes-behind-haproxy-9384c6c040d8
 - https://github.com/kubernetes-sigs/sig-windows-tools/blob/master/guides/guide-for-adding-windows-node.md
 - https://github.com/kubernetes-csi/csi-driver-smb/tree/master/charts
