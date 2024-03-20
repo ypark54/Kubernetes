@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cm-project-windows
+  labels:
+    app: carmaker
+    carmaker-version: "12"
+    matlab-version: "2022b"
+    os: "windows"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: carmaker
+      carmaker-version: "12"
+      matlab-version: "2022b"
+      os: "windows"
+  template:
+    metadata:
+      labels:
+        app: carmaker
+        carmaker-version: "12"
+        matlab-version: "2022b"
+        os: "windows"
+    spec:
+      containers:
+        - name: cm-project-windows
+          image: yeonsoopark/cm-windows:v1.0-ltsc2019
+          imagePullPolicy: Always
+          volumeMounts:
+            - name: cm-smb
+              mountPath: "/ipg/carmaker/"
+            - name: matlab-smb
+              mountPath: "/MATLAB/"
+      volumes:
+        - name: cm-smb
+          persistentVolumeClaim:
+            claimName: pvc-cm-smb
+        - name: matlab-smb
+          persistentVolumeClaim:
+            claimName: pvc-matlab-smb
