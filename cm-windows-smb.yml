@@ -48,4 +48,3 @@ spec:
                   name: smbcreds2
                   key: password
           args: ["-u", "$(USERNAME);$(PASSWORD)", "-s", "share;/smbshare/;yes;no;yes;all;none"]
-
