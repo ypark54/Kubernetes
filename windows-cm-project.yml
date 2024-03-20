@@ -26,6 +26,7 @@ spec:
       containers:
         - name: cm-project-windows
           image: yeonsoopark/cm-windows:v1.0-ltsc2019
+          imagePullPolicy: Always
           volumeMounts:
             - name: cm-smb
               mountPath: "/ipg/carmaker/"

@@ -33,6 +33,7 @@ spec:
       containers:
         - name: matlab-windows-smb
           image: yeonsoopark/matlab-windows-smb:R2022b
+          imagePullPolicy: Always
           env:
             - name: PERMISSIONS
               value: "0777"

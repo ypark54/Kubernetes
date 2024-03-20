@@ -24,9 +24,11 @@ COPY --from=builder "c:\\gopath\\src\\github.com\\kubernetes-sigs\\windows-testi
 
 # CarMaker configuration
 ARG CM_LICENSE="server 192.168.0.102"
-RUN mkdir "C:/ipg/etc" "C:/ipg/carmaker"
+RUN mkdir "C:/ipg/etc" "C:/ipg/carmaker" "C:/MATLAB"
 RUN echo %CM_LICENSE% >> C:/ipg/etc/Licenses
 
-COPY default default
+COPY windows-cm-11 windows-cm-11
+COPY windows-cm-12 windows-cm-12
+COPY windows-cm-13 windows-cm-13
 
 CMD pauseloop.exe

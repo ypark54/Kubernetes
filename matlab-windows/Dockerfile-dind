@@ -7,3 +7,6 @@ COPY ${src} ${trg}
 
 
 # TODO: Need to adjust SMB permissions so that all shared contents are executable.
+RUN chown -R root /smbshare/ && \
+    chgrp -R root /smbshare/ && \
+    chmod -R +rwx /smbshare/
