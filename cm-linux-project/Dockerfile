@@ -1,6 +1,8 @@
 # Basic configuration
-ARG BUILD_FROM=nvidia/cudagl:11.4.2-base
-FROM $BUILD_FROM
+ARG imageName=nvidia/cudagl
+ARG imageTag=11.4.2-base
+FROM ${imageName}:${imageTag}
+
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -40,10 +42,11 @@ ARG CM_LICENSE="server 192.168.0.102"
 ARG TZ=Europe/Berlin
 RUN mkdir -p /opt/ipg/etc && \
     mkdir -p /opt/ipg/carmaker && \
+    mkdir -p /usr/local/MATLAB && \
     echo ${CM_LICENSE} >> /opt/ipg/etc/Licenses && \
     cp /usr/share/zoneinfo/$TZ /etc/localtime && \
     echo $TZ > /etc/timezone
 
-COPY default default
+COPY linux-cm-12 linux-cm-12
 
 CMD ["/bin/sleep", "infinity"]

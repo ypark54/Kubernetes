@@ -1,0 +1,10 @@
+CMData.Testrun='Data/TestRun/Braking';
+CMData.TmpTestrun='';
+CMData.LastResultFName='';
+CMData.EndStatus='';
+assignin('base','CMData', CMData);
+assignin('base', 'cm_apo_available', '0');
+assignin('base', 'cm_startup_options', 'Data/Config/test_startup');
+run('src_cm4sl/cmenv.m');
+load_system('src_cm4sl/generic.slx');
+sim('generic');

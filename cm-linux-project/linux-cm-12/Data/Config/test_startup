@@ -1,0 +1,15 @@
+#INFOFILE1.1 (UTF-8) - Do not remove this line!
+FileIdent = CarMaker-Startup 1.0
+FileCreator = CarMaker for Simulink 12.0
+TestRun = Braking
+TmpFName =
+User = ml
+Variation =
+Instance = 0001
+SimEnd = Sim_End_0001
+DumpDDict = 1
+ApoAvailable = 0
+SaveMode = 2
+msHistory = 0
+DataPools:
+	/opt/ipg/carmaker/linux64-12.0.2
