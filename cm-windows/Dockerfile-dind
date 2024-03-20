@@ -1,5 +1,9 @@
+## Minimal SMB Server image based on Alpine adjusted for use in k8s Windows
 FROM andyzhangx/samba:win-fix
 
 ARG src="./IPG/carmaker"
 ARG trg="/smbshare/"
 COPY ${src} ${trg}
+
+
+# TODO: Adjust permissions so that all shared contents are executable

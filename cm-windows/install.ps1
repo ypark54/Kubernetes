@@ -1,4 +1,5 @@
 Write-Output "Docker inside Docker"
+#&"C:\Program Files\Docker\Docker\DockerCli.exe" -SwitchLinuxEngine needs to by called during this 5 seconds sleep
 sleep 5
 
 docker build -f Dockerfile -t yeonsoopark/cm-windows-smb:12.0.2 .
