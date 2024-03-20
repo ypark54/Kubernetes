@@ -32,7 +32,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
         - name: matlab-windows-smb
-          image: yeonsoopark/docker-matlab:latest
+          image: yeonsoopark/matlab-windows-smb:R2022b
           env:
             - name: PERMISSIONS
               value: "0777"

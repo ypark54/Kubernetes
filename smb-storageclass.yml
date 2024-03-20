@@ -6,8 +6,6 @@ provisioner: smb.csi.k8s.io
 parameters:
   # On Windows, "*.default.svc.cluster.local" could not be recognized by csi-proxy
   source: "//cm-windows-smb.default.svc.cluster.local/share"
-  # if csi.storage.k8s.io/provisioner-secret is provided, will create a sub directory
-  # with PV name under source
   csi.storage.k8s.io/node-stage-secret-name: "smbcreds2"
   csi.storage.k8s.io/node-stage-secret-namespace: "default"
 volumeBindingMode: Immediate
@@ -25,8 +23,6 @@ provisioner: smb.csi.k8s.io
 parameters:
   # On Windows, "*.default.svc.cluster.local" could not be recognized by csi-proxy
   source: "//matlab-windows-smb.default.svc.cluster.local/share"
-  # if csi.storage.k8s.io/provisioner-secret is provided, will create a sub directory
-  # with PV name under source
   csi.storage.k8s.io/node-stage-secret-name: "smbcreds2"
   csi.storage.k8s.io/node-stage-secret-namespace: "default"
 volumeBindingMode: Immediate

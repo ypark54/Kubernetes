@@ -1,6 +1,7 @@
 ## Installation of CarMaker on Docker in Docker Windows container
 FROM docker:26.0.0-rc2-windowsservercore-1809
 
+# TODO: Need to adapt the dockerfile for multiple Matlab versions
 COPY ./CD-CarMakerOffice-win-12.0.2.zip ./CD-CarMakerOffice-win-12.0.2.zip
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'Continue'; $verbosePreference='Continue';"]
 RUN Expand-Archive -Path C:\CD-CarMakerOffice-win-12.0.2.zip -DestinationPath C:\;

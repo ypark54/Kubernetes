@@ -6,4 +6,4 @@ ARG trg="/smbshare/"
 COPY ${src} ${trg}
 
 
-# TODO: Adjust permissions so that all shared contents are executable
+# TODO: Need to adjust SMB permissions so that all shared contents are executable.

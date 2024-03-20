@@ -4,6 +4,7 @@ sleep 5
 
 docker build -f Dockerfile -t yeonsoopark/cm-windows-smb:12.0.2 .
 Write-Output "Build Complete"
+# TODO: Need to fix the password input to be stdin
 docker login -u yeonsoo.park@ipg-automotive.com -p Vlskffp1!
 Write-Output "Logged in as yeonsoopark@ipg-automotive.com"
 docker push yeonsoopark/cm-windows-smb:12.0.2

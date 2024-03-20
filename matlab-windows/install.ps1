@@ -4,6 +4,7 @@ sleep 5
 
 docker build -f Dockerfile -t yeonsoopark/matlab-windows-smb:R2022b .
 Write-Output "Build Complete"
+# TODO: Need to fix the password input to be stdin
 docker login -u yeonsoo.park@ipg-automotive.com -p Vlskffp1!
 Write-Output "Logged in as yeonsoopark@ipg-automotive.com"
 docker push yeonsoopark/matlab-windows-smb:R2022b
